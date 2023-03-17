@@ -207,8 +207,8 @@ void Arduino_Canvas_Indexed::raise_mask_level()
     uint8_t new_color;
     _indexed_size = 0;
     _color_mask = mask_level_list[++_current_mask_level];
-    Serial.print("Raised mask level: ");
-    Serial.println(_current_mask_level);
+    // Serial.print("Raised mask level: ");
+    // Serial.println(_current_mask_level);
 
     // update _framebuffer color index, it is a time consuming job
     for (uint8_t old_color = 0; old_color < old_indexed_size; old_color++)
